@@ -13,7 +13,6 @@ import {
   RevealFx,
   LetterFx,
   GlitchFx,
-  SparkleFx,
   Arrow,
   SmartImage,
 } from "@/once-ui/components";
@@ -85,7 +84,7 @@ export default function Home() {
                 flex={4}
                 gap="24"
                 marginBottom="104"
-                direction="column"
+                mobileDirection="column"
               >
                 <GlitchFx
                   speed="fast"
@@ -93,7 +92,7 @@ export default function Home() {
                   trigger="instant"
                   continuous
                 >
-                  <Flex direction="column" padding="24" gap="8">
+                  {/* <Flex direction="column" padding="24" gap="8"> */}
                     <Text variant="heading-strong-m">About Myself</Text>
                     <Text onBackground="neutral-medium" marginBottom="16">
                       Name : Sirirak Sophakarn
@@ -125,7 +124,7 @@ export default function Home() {
                     <Text onBackground="neutral-medium" marginBottom="16">
                       Blood Line : B
                     </Text>
-                  </Flex>
+                  {/* </Flex> */}
                 </GlitchFx>
 				<GlitchFx
                   speed="fast"
