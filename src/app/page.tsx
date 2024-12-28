@@ -79,20 +79,20 @@ export default function Home() {
                   objectFit="contain"
                 />
               </Flex>
-              <Flex
+              {/* <Flex
                 position="relative"
                 flex={4}
                 gap="24"
                 marginBottom="104"
                 mobileDirection="column"
-              >
+              > */}
                 <GlitchFx
                   speed="fast"
                   interval={2500}
                   trigger="instant"
                   continuous
                 >
-                  {/* <Flex direction="column" padding="24" gap="8"> */}
+                  <Flex direction="column" padding="24" gap="8">
                     <Text variant="heading-strong-m">About Myself</Text>
                     <Text onBackground="neutral-medium" marginBottom="16">
                       Name : Sirirak Sophakarn
@@ -124,7 +124,7 @@ export default function Home() {
                     <Text onBackground="neutral-medium" marginBottom="16">
                       Blood Line : B
                     </Text>
-                  {/* </Flex> */}
+                  </Flex>
                 </GlitchFx>
 				<GlitchFx
                   speed="fast"
@@ -143,7 +143,7 @@ export default function Home() {
                   </Flex>
 				  
                 </GlitchFx>
-              </Flex>
+              {/* </Flex> */}
             </RevealFx>
 
             <Flex
