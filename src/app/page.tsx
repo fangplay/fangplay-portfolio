@@ -289,12 +289,12 @@ export default function Home() {
                 <Flex fillWidth paddingY="8" gap="8" direction="column">
                   <Flex fillWidth gap="12" alignItems="center">
                     <Text variant="body-strong-m" onBackground="neutral-strong">
-                      My Galllery
+                      My Certification
                     </Text>
                     <Icon size="s" name="arrowUpRight" />
                   </Flex>
                   <Text variant="body-default-s" onBackground="neutral-weak">
-                    My album pictures.
+                    My certification from all courses.
                   </Text>
                 </Flex>
               </Link>
@@ -307,12 +307,12 @@ export default function Home() {
                 <Flex fillWidth paddingY="8" gap="8" direction="column">
                   <Flex fillWidth gap="12" alignItems="center">
                     <Text variant="body-strong-m" onBackground="neutral-strong">
-                      Generations
+                      My Galleries
                     </Text>
                     <Icon size="s" name="arrowUpRight" />
                   </Flex>
                   <Text variant="body-default-s" onBackground="neutral-weak">
-                    Timeline by generations.
+                    Picture memories on my story.
                   </Text>
                 </Flex>
               </Link>
