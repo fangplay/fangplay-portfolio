@@ -38,6 +38,8 @@ export default function Home() {
     },
   ];
 
+  const currentYear = new Date().getFullYear(); // Get the current year dynamically
+
   return (
     <Flex
       fillWidth
@@ -184,13 +186,13 @@ export default function Home() {
               
 
               <Button
-                id="contactme"
+                id="sendmail"
                 href="mailto:sirirak.s@outlook.com"
                 variant="secondary"
               >
                 <Flex alignItems="center">
-                  Contact me
-                  <Arrow trigger="#contactme" />
+                  Send Mail
+                  <Arrow trigger="#sendmail" />
                 </Flex>
               </Button>
 			  </GlitchFx>
@@ -206,26 +208,115 @@ export default function Home() {
             mobileColumns="1col"
             fillWidth
           >
-            {links.map((link) => (
+            
               <Link
                 target="_blank"
                 style={{ padding: "var(--responsive-space-l)" }}
-                key={link.href}
-                href={link.href}
+                href="#"
               >
                 <Flex fillWidth paddingY="8" gap="8" direction="column">
                   <Flex fillWidth gap="12" alignItems="center">
                     <Text variant="body-strong-m" onBackground="neutral-strong">
-                      {link.title}
+                      Projects
                     </Text>
                     <Icon size="s" name="arrowUpRight" />
                   </Flex>
                   <Text variant="body-default-s" onBackground="neutral-weak">
-                    {link.description}
+                    The projects was editing and/or making by me.
                   </Text>
                 </Flex>
               </Link>
-            ))}
+
+			  <Link
+                target="_blank"
+                style={{ padding: "var(--responsive-space-l)" }}
+                href="#"
+              >
+                <Flex fillWidth paddingY="8" gap="8" direction="column">
+                  <Flex fillWidth gap="12" alignItems="center">
+                    <Text variant="body-strong-m" onBackground="neutral-strong">
+                      Skills
+                    </Text>
+                    <Icon size="s" name="arrowUpRight" />
+                  </Flex>
+                  <Text variant="body-default-s" onBackground="neutral-weak">
+                    Work soft and hard skills on career.
+                  </Text>
+                </Flex>
+              </Link>
+
+			  <Link
+                target="_blank"
+                style={{ padding: "var(--responsive-space-l)" }}
+                href="#"
+              >
+                <Flex fillWidth paddingY="8" gap="8" direction="column">
+                  <Flex fillWidth gap="12" alignItems="center">
+                    <Text variant="body-strong-m" onBackground="neutral-strong">
+                      Contact
+                    </Text>
+                    <Icon size="s" name="arrowUpRight" />
+                  </Flex>
+                  <Text variant="body-default-s" onBackground="neutral-weak">
+                    Contact on work and/or other interesting on my presentation data.
+                  </Text>
+                </Flex>
+              </Link>
+
+			  <Link
+                target="_blank"
+                style={{ padding: "var(--responsive-space-l)" }}
+                href="#"
+              >
+                <Flex fillWidth paddingY="8" gap="8" direction="column">
+                  <Flex fillWidth gap="12" alignItems="center">
+                    <Text variant="body-strong-m" onBackground="neutral-strong">
+                      NeoXFANGPLAY Channel
+                    </Text>
+                    <Icon size="s" name="arrowUpRight" />
+                  </Flex>
+                  <Text variant="body-default-s" onBackground="neutral-weak">
+                    Channel video and steaming online my channel.
+                  </Text>
+                </Flex>
+              </Link>
+
+			  <Link
+                target="_blank"
+                style={{ padding: "var(--responsive-space-l)" }}
+                href="#"
+              >
+                <Flex fillWidth paddingY="8" gap="8" direction="column">
+                  <Flex fillWidth gap="12" alignItems="center">
+                    <Text variant="body-strong-m" onBackground="neutral-strong">
+                      My Galllery
+                    </Text>
+                    <Icon size="s" name="arrowUpRight" />
+                  </Flex>
+                  <Text variant="body-default-s" onBackground="neutral-weak">
+                    My album pictures.
+                  </Text>
+                </Flex>
+              </Link>
+
+			  <Link
+                target="_blank"
+                style={{ padding: "var(--responsive-space-l)" }}
+                href="#"
+              >
+                <Flex fillWidth paddingY="8" gap="8" direction="column">
+                  <Flex fillWidth gap="12" alignItems="center">
+                    <Text variant="body-strong-m" onBackground="neutral-strong">
+                      Generations
+                    </Text>
+                    <Icon size="s" name="arrowUpRight" />
+                  </Flex>
+                  <Text variant="body-default-s" onBackground="neutral-weak">
+                    Timeline by generations.
+                  </Text>
+                </Flex>
+              </Link>
+
           </Grid>
         </Flex>
       </Flex>
@@ -238,10 +329,8 @@ export default function Home() {
         justifyContent="space-between"
       >
         <Text variant="body-default-s" onBackground="neutral-weak">
-          © 2024 Once UI,{" "}
-          <Link href="https://github.com/once-ui-system/nextjs-starter?tab=MIT-1-ov-file">
-            MIT License
-          </Link>
+          © {currentYear} Once UI,{" "}
+          Developed&Designed By FANGPLAY SIRIRAK
         </Text>
         <Flex gap="12">
           <Button
