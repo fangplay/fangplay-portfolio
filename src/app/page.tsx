@@ -13,7 +13,6 @@ import {
   RevealFx,
   LetterFx,
   GlitchFx,
-  SparkleFx,
   Arrow,
   SmartImage,
 } from "@/once-ui/components";
@@ -80,13 +79,13 @@ export default function Home() {
                   objectFit="contain"
                 />
               </Flex>
-              <Flex
+              {/* <Flex
                 position="relative"
                 flex={4}
                 gap="24"
                 marginBottom="104"
-                direction="column"
-              >
+                mobileDirection="column"
+              > */}
                 <GlitchFx
                   speed="fast"
                   interval={2500}
@@ -144,7 +143,7 @@ export default function Home() {
                   </Flex>
 				  
                 </GlitchFx>
-              </Flex>
+              {/* </Flex> */}
             </RevealFx>
 
             <Flex
