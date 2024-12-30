@@ -15,6 +15,7 @@ import {
   GlitchFx,
   Arrow,
   SmartImage,
+  Badge,
 } from "@/once-ui/components";
 import Link from "next/link";
 
@@ -79,71 +80,60 @@ export default function Home() {
                   objectFit="contain"
                 />
               </Flex>
-              {/* <Flex
+
+              <Flex
                 position="relative"
                 flex={4}
-                gap="24"
+                gap="20"
                 marginBottom="104"
                 mobileDirection="column"
-              > */}
-                <GlitchFx
-                  speed="fast"
-                  interval={2500}
-                  trigger="instant"
-                  continuous
-                >
-                  <Flex direction="column" padding="24" gap="8">
-                    <Text variant="heading-strong-m">About Myself</Text>
-                    <Text onBackground="neutral-medium" marginBottom="16">
-                      Name : Sirirak Sophakarn
-                    </Text>
-                    <Text onBackground="neutral-medium" marginBottom="16">
-                      Chinese Name : 西裡拉克·索法卡恩
-                    </Text>
-                    <Text onBackground="neutral-medium" marginBottom="16">
-                      Japanese Name : シリラク・ソファカーン
-                    </Text>
-                    <Text onBackground="neutral-medium" marginBottom="16">
-                      Korean Name : 시라크 소타카르
-                    </Text>
-                    <Text onBackground="neutral-medium" marginBottom="16">
-                      Nickname : Fangplay
-                    </Text>
-                    <Text onBackground="neutral-medium" marginBottom="16">
-                      Chinese Nickname : 方普拉
-                    </Text>
-                    <Text onBackground="neutral-medium" marginBottom="16">
-                      Japanese Nickname : ファングプレイ
-                    </Text>
-                    <Text onBackground="neutral-medium" marginBottom="16">
-                      Korean Nickname : 팡플레이
-                    </Text>
-                    <Text onBackground="neutral-medium" marginBottom="16">
-                      Birth Date : 5 August 1995
-                    </Text>
-                    <Text onBackground="neutral-medium" marginBottom="16">
-                      Blood Line : B
-                    </Text>
-                  </Flex>
-                </GlitchFx>
-				<GlitchFx
-                  speed="fast"
-                  interval={2500}
-                  trigger="instant"
-                  continuous
-                >
-                  <Flex direction="column" padding="24" gap="8">
-                    <Text variant="heading-strong-m">Score Langauge</Text>
-                    <Text onBackground="neutral-medium" marginBottom="16">
-					TOEIC Score : 515(On 21 November 2023)
-                    </Text>
-                    <Text onBackground="neutral-medium" marginBottom="16">
-					CU-TEP Score : 43(On 27 May 2023)
-                    </Text>
-                  </Flex>
-				  
-                </GlitchFx>
-              {/* </Flex> */}
+                direction="row"
+                padding="20"
+              >
+                <Flex direction="column" padding="24" gap="8">
+                  <Text variant="heading-strong-m">About Myself</Text>
+                  <Text onBackground="neutral-medium" marginBottom="16">
+                    Name : Sirirak Sophakarn
+                  </Text>
+                  <Text onBackground="neutral-medium" marginBottom="16">
+                    Chinese Name : 西裡拉克·索法卡恩
+                  </Text>
+                  <Text onBackground="neutral-medium" marginBottom="16">
+                    Japanese Name : シリラク・ソファカーン
+                  </Text>
+                  <Text onBackground="neutral-medium" marginBottom="16">
+                    Korean Name : 시라크 소타카르
+                  </Text>
+                  <Text onBackground="neutral-medium" marginBottom="16">
+                    Nickname : Fangplay
+                  </Text>
+                  <Text onBackground="neutral-medium" marginBottom="16">
+                    Chinese Nickname : 方普拉
+                  </Text>
+                  <Text onBackground="neutral-medium" marginBottom="16">
+                    Japanese Nickname : ファングプレイ
+                  </Text>
+                  <Text onBackground="neutral-medium" marginBottom="16">
+                    Korean Nickname : 팡플레이
+                  </Text>
+                  <Text onBackground="neutral-medium" marginBottom="16">
+                    Birth Date : 5 August 1995
+                  </Text>
+                  <Text onBackground="neutral-medium" marginBottom="16">
+                    Blood Line : B
+                  </Text>
+                </Flex>
+
+                <Flex direction="column" padding="24" gap="8">
+                  <Text variant="heading-strong-m">Score Langauge</Text>
+                  <Text onBackground="neutral-medium" marginBottom="16">
+                    TOEIC Score : 515(On 21 November 2023)
+                  </Text>
+                  <Text onBackground="neutral-medium" marginBottom="16">
+                    CU-TEP Score : 43(On 27 May 2023)
+                  </Text>
+                </Flex>
+              </Flex>
             </RevealFx>
 
             <Flex
@@ -182,22 +172,33 @@ export default function Home() {
                     </LetterFx>
                   </span>
                 </Heading>
-              
 
-              <Button
-                id="sendmail"
-                href="mailto:sirirak.s@outlook.com"
-                variant="secondary"
-              >
-                <Flex alignItems="center">
-                  Send Mail
-                  <Arrow trigger="#sendmail" />
-                </Flex>
-              </Button>
-			  </GlitchFx>
-			  <a href="https://app.daily.dev/fangplay"><img src="https://api.daily.dev/devcards/v2/z04Ml86W6sXFPQJyBEh3E.png?type=default&r=txx" width="356" alt="Sirirak Sophakarn's Dev Card"/></a>
+                {/* <Button
+                  id="sendmail"
+                  href="mailto:sirirak.s@outlook.com"
+                  variant="secondary"
+                > */}
+                  <Flex alignItems="center">
+                    <Badge arrow effect
+                    id="sendmail"
+                    href="mailto:sirirak.s@outlook.com">
+                    Send Mail
+                    </Badge>
+                    {/* Send Mail
+                    <Arrow trigger="#sendmail" /> */}
+                  </Flex>
+                {/* </Button> */}
+              </GlitchFx>
+              <a href="https://app.daily.dev/fangplay">
+                <img
+                  src="https://api.daily.dev/devcards/v2/z04Ml86W6sXFPQJyBEh3E.png?type=default&r=txx"
+                  width="356"
+                  alt="Sirirak Sophakarn's Dev Card"
+                />
+              </a>
             </Flex>
           </Flex>
+          {/* <GlitchFx speed="medium" interval={7500} trigger="instant" continuous> */}
           <Grid
             radius="l"
             border="neutral-medium"
@@ -207,116 +208,116 @@ export default function Home() {
             mobileColumns="1col"
             fillWidth
           >
-            
-              <Link
-                target="_blank"
-                style={{ padding: "var(--responsive-space-l)" }}
-                href="#"
-              >
-                <Flex fillWidth paddingY="8" gap="8" direction="column">
-                  <Flex fillWidth gap="12" alignItems="center">
-                    <Text variant="body-strong-m" onBackground="neutral-strong">
-                      Projects
-                    </Text>
-                    <Icon size="s" name="arrowUpRight" />
-                  </Flex>
-                  <Text variant="body-default-s" onBackground="neutral-weak">
-                    The projects was editing and/or making by me.
+            <Link
+              target="_blank"
+              style={{ padding: "var(--responsive-space-l)" }}
+              href="#"
+            >
+              <Flex fillWidth paddingY="8" gap="8" direction="column">
+                <Flex fillWidth gap="12" alignItems="center">
+                  <Text variant="body-strong-m" onBackground="neutral-strong">
+                    Projects
                   </Text>
+                  <Icon size="s" name="arrowUpRight" />
                 </Flex>
-              </Link>
+                <Text variant="body-default-s" onBackground="neutral-weak">
+                  The projects was editing and/or making by me.
+                </Text>
+              </Flex>
+            </Link>
 
-			  <Link
-                target="_blank"
-                style={{ padding: "var(--responsive-space-l)" }}
-                href="#"
-              >
-                <Flex fillWidth paddingY="8" gap="8" direction="column">
-                  <Flex fillWidth gap="12" alignItems="center">
-                    <Text variant="body-strong-m" onBackground="neutral-strong">
-                      Skills
-                    </Text>
-                    <Icon size="s" name="arrowUpRight" />
-                  </Flex>
-                  <Text variant="body-default-s" onBackground="neutral-weak">
-                    Work soft and hard skills on career.
+            <Link
+              target="_blank"
+              style={{ padding: "var(--responsive-space-l)" }}
+              href="#"
+            >
+              <Flex fillWidth paddingY="8" gap="8" direction="column">
+                <Flex fillWidth gap="12" alignItems="center">
+                  <Text variant="body-strong-m" onBackground="neutral-strong">
+                    Skills
                   </Text>
+                  <Icon size="s" name="arrowUpRight" />
                 </Flex>
-              </Link>
+                <Text variant="body-default-s" onBackground="neutral-weak">
+                  Work soft and hard skills on career.
+                </Text>
+              </Flex>
+            </Link>
 
-			  <Link
-                target="_blank"
-                style={{ padding: "var(--responsive-space-l)" }}
-                href="#"
-              >
-                <Flex fillWidth paddingY="8" gap="8" direction="column">
-                  <Flex fillWidth gap="12" alignItems="center">
-                    <Text variant="body-strong-m" onBackground="neutral-strong">
-                      Contact
-                    </Text>
-                    <Icon size="s" name="arrowUpRight" />
-                  </Flex>
-                  <Text variant="body-default-s" onBackground="neutral-weak">
-                    Contact on work and/or other interesting on my presentation data.
+            <Link
+              target="_blank"
+              style={{ padding: "var(--responsive-space-l)" }}
+              href="#"
+            >
+              <Flex fillWidth paddingY="8" gap="8" direction="column">
+                <Flex fillWidth gap="12" alignItems="center">
+                  <Text variant="body-strong-m" onBackground="neutral-strong">
+                    Contact
                   </Text>
+                  <Icon size="s" name="arrowUpRight" />
                 </Flex>
-              </Link>
+                <Text variant="body-default-s" onBackground="neutral-weak">
+                  Contact on work and/or other interesting on my presentation
+                  data.
+                </Text>
+              </Flex>
+            </Link>
 
-			  <Link
-                target="_blank"
-                style={{ padding: "var(--responsive-space-l)" }}
-                href="#"
-              >
-                <Flex fillWidth paddingY="8" gap="8" direction="column">
-                  <Flex fillWidth gap="12" alignItems="center">
-                    <Text variant="body-strong-m" onBackground="neutral-strong">
-                      NeoXFANGPLAY Channel
-                    </Text>
-                    <Icon size="s" name="arrowUpRight" />
-                  </Flex>
-                  <Text variant="body-default-s" onBackground="neutral-weak">
-                    Channel video and steaming online my channel.
+            <Link
+              target="_blank"
+              style={{ padding: "var(--responsive-space-l)" }}
+              href="#"
+            >
+              <Flex fillWidth paddingY="8" gap="8" direction="column">
+                <Flex fillWidth gap="12" alignItems="center">
+                  <Text variant="body-strong-m" onBackground="neutral-strong">
+                    NeoXFANGPLAY Channel
                   </Text>
+                  <Icon size="s" name="arrowUpRight" />
                 </Flex>
-              </Link>
+                <Text variant="body-default-s" onBackground="neutral-weak">
+                  Channel video and steaming online my channel.
+                </Text>
+              </Flex>
+            </Link>
 
-			  <Link
-                target="_blank"
-                style={{ padding: "var(--responsive-space-l)" }}
-                href="#"
-              >
-                <Flex fillWidth paddingY="8" gap="8" direction="column">
-                  <Flex fillWidth gap="12" alignItems="center">
-                    <Text variant="body-strong-m" onBackground="neutral-strong">
-                      My Certification
-                    </Text>
-                    <Icon size="s" name="arrowUpRight" />
-                  </Flex>
-                  <Text variant="body-default-s" onBackground="neutral-weak">
-                    My certification from all courses.
+            <Link
+              target="_blank"
+              style={{ padding: "var(--responsive-space-l)" }}
+              href="#"
+            >
+              <Flex fillWidth paddingY="8" gap="8" direction="column">
+                <Flex fillWidth gap="12" alignItems="center">
+                  <Text variant="body-strong-m" onBackground="neutral-strong">
+                    My Certification
                   </Text>
+                  <Icon size="s" name="arrowUpRight" />
                 </Flex>
-              </Link>
+                <Text variant="body-default-s" onBackground="neutral-weak">
+                  My certification from all courses.
+                </Text>
+              </Flex>
+            </Link>
 
-			  <Link
-                target="_blank"
-                style={{ padding: "var(--responsive-space-l)" }}
-                href="#"
-              >
-                <Flex fillWidth paddingY="8" gap="8" direction="column">
-                  <Flex fillWidth gap="12" alignItems="center">
-                    <Text variant="body-strong-m" onBackground="neutral-strong">
-                      My Galleries
-                    </Text>
-                    <Icon size="s" name="arrowUpRight" />
-                  </Flex>
-                  <Text variant="body-default-s" onBackground="neutral-weak">
-                    Picture memories on my story.
+            <Link
+              target="_blank"
+              style={{ padding: "var(--responsive-space-l)" }}
+              href="#"
+            >
+              <Flex fillWidth paddingY="8" gap="8" direction="column">
+                <Flex fillWidth gap="12" alignItems="center">
+                  <Text variant="body-strong-m" onBackground="neutral-strong">
+                    My Galleries
                   </Text>
+                  <Icon size="s" name="arrowUpRight" />
                 </Flex>
-              </Link>
-
+                <Text variant="body-default-s" onBackground="neutral-weak">
+                  Picture memories on my story.
+                </Text>
+              </Flex>
+            </Link>
           </Grid>
+          {/* </GlitchFx> */}
         </Flex>
       </Flex>
       <Flex
@@ -328,8 +329,7 @@ export default function Home() {
         justifyContent="space-between"
       >
         <Text variant="body-default-s" onBackground="neutral-weak">
-          © {currentYear} Once UI,{" "}
-          Developed&Designed By FANGPLAY SIRIRAK
+          © {currentYear} Once UI, Developed&Designed By FANGPLAY SIRIRAK
         </Text>
         <Flex gap="12">
           <Button
