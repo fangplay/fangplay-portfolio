@@ -60,6 +60,17 @@ export default function Home() {
         alignItems="center"
         flex={1}
       >
+        <InlineCode
+          className="shadow-m"
+          style={{
+            width: "fit-content",
+            padding: "var(--static-space-8) var(--static-space-16)",
+            backdropFilter: "blur(var(--static-space-1))",
+          }}
+        >
+          This web was creation&developing on{" "}
+          <span className="brand-on-background-medium">NextJS&OnceUI</span>
+        </InlineCode>
         <Flex
           as="main"
           direction="column"
@@ -69,7 +80,38 @@ export default function Home() {
           padding="l"
           gap="l"
         >
-          <Flex mobileDirection="column" fillWidth gap="24">
+          <Flex mobileDirection="column" direction="column" fillWidth gap="24">
+            <Flex
+              position="relative"
+              flex={4}
+              gap="20"
+              marginBottom="80"
+              direction="column"
+              mobileDirection="column"
+              padding="20"
+            >
+              <Heading wrap="balance" variant="display-strong-s">
+                <span className="font-code">
+                  <LetterFx trigger="instant">
+                    I'm developer devops and system administrator who can
+                    continue work evolve & study include practice for my carreer
+                    to be advanced skills. : FANGPLAY Sirirak
+                  </LetterFx>
+                </span>
+              </Heading>
+              <Flex alignItems="center">
+                <Badge
+                  arrow
+                  effect
+                  id="sendmail"
+                  href="mailto:sirirak.s@outlook.com"
+                >
+                  Send Work Mail
+                </Badge>
+              </Flex>
+            </Flex>
+            
+
             <RevealFx speed="medium" delay={0} translateY={0}>
               <Flex position="relative" flex={2} paddingTop="56" paddingX="xl">
                 <SmartImage
@@ -86,8 +128,8 @@ export default function Home() {
                 flex={4}
                 gap="20"
                 marginBottom="104"
-                mobileDirection="column"
                 direction="row"
+                mobileDirection="column"
                 padding="20"
               >
                 <Flex direction="column" padding="24" gap="8">
@@ -140,65 +182,28 @@ export default function Home() {
               position="relative"
               flex={4}
               gap="24"
-              marginBottom="104"
+              marginBottom="80"
               direction="column"
-            >
-              <InlineCode
-                className="shadow-m"
-                style={{
-                  width: "fit-content",
-                  padding: "var(--static-space-8) var(--static-space-16)",
-                  backdropFilter: "blur(var(--static-space-1))",
-                }}
-              >
-                This web was creation&developing on{" "}
-                <span className="brand-on-background-medium">
-                  NextJS&OnceUI
-                </span>
-              </InlineCode>
-
-              <GlitchFx
-                speed="medium"
-                interval={2500}
-                trigger="instant"
-                continuous
-              >
-                <Heading wrap="balance" variant="display-strong-s">
-                  <span className="font-code">
-                    <LetterFx trigger="instant">
-                      I'm developer devops and system administrator who can
-                      continue work evolve & study include practice for my
-                      carreer to be advanced skills. FANGPLAY Sirirak
-                    </LetterFx>
-                  </span>
-                </Heading>
-
-                {/* <Button
-                  id="sendmail"
-                  href="mailto:sirirak.s@outlook.com"
-                  variant="secondary"
-                > */}
-                  <Flex alignItems="center">
-                    <Badge arrow effect
-                    id="sendmail"
-                    href="mailto:sirirak.s@outlook.com">
-                    Send Mail
-                    </Badge>
-                    {/* Send Mail
-                    <Arrow trigger="#sendmail" /> */}
-                  </Flex>
-                {/* </Button> */}
-              </GlitchFx>
-              <a href="https://app.daily.dev/fangplay">
+            >              
+              <Flex position="relative" flex={2} paddingTop="56" paddingX="xl">
+                <a href="https://app.daily.dev/fangplay">
                 <img
                   src="https://api.daily.dev/devcards/v2/z04Ml86W6sXFPQJyBEh3E.png?type=default&r=txx"
                   width="356"
                   alt="Sirirak Sophakarn's Dev Card"
                 />
               </a>
+              <SmartImage
+                  src="/images/channel.png"
+                  alt="Image description"
+                  aspectRatio="16/9"
+                  radius="l"
+                  objectFit="contain"
+                />
+              </Flex>
             </Flex>
           </Flex>
-          {/* <GlitchFx speed="medium" interval={7500} trigger="instant" continuous> */}
+
           <Grid
             radius="l"
             border="neutral-medium"
@@ -276,7 +281,7 @@ export default function Home() {
                   <Icon size="s" name="arrowUpRight" />
                 </Flex>
                 <Text variant="body-default-s" onBackground="neutral-weak">
-                  Channel video and steaming online my channel.
+                  Channel video and steaming online channel.
                 </Text>
               </Flex>
             </Link>
@@ -317,7 +322,7 @@ export default function Home() {
               </Flex>
             </Link>
           </Grid>
-          {/* </GlitchFx> */}
+
         </Flex>
       </Flex>
       <Flex
