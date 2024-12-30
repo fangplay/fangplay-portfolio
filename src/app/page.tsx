@@ -60,7 +60,7 @@ export default function Home() {
         alignItems="center"
         flex={1}
       >
-        <InlineCode
+        {/* <InlineCode
           className="shadow-m"
           style={{
             width: "fit-content",
@@ -70,7 +70,7 @@ export default function Home() {
         >
           This web was creation&developing on{" "}
           <span className="brand-on-background-medium">NextJS&OnceUI</span>
-        </InlineCode>
+        </InlineCode> */}
         <Flex
           as="main"
           direction="column"
@@ -110,17 +110,31 @@ export default function Home() {
                 </Badge>
               </Flex>
             </Flex>
-            
 
             <RevealFx speed="medium" delay={0} translateY={0}>
-              <Flex position="relative" flex={2} paddingTop="56" paddingX="xl">
-                <SmartImage
-                  src="/images/profile-2024.jpg"
-                  alt="Image description"
-                  aspectRatio="1/1"
-                  radius="l"
-                  objectFit="contain"
-                />
+              <Flex
+                position="relative"
+                flex={4}
+                gap="20"
+                marginBottom="104"
+                direction="column"
+                mobileDirection="column"
+                padding="20"
+              >
+                <Flex
+                  position="relative"
+                  flex={2}
+                  paddingTop="56"
+                  paddingX="xl"
+                >
+                  <SmartImage
+                    src="/images/profile-2024.jpg"
+                    alt="Image description"
+                    aspectRatio="1/1"
+                    radius="l"
+                    objectFit="contain"
+                  />
+                </Flex>
               </Flex>
 
               <Flex
@@ -128,7 +142,7 @@ export default function Home() {
                 flex={4}
                 gap="20"
                 marginBottom="104"
-                direction="row"
+                direction="column"
                 mobileDirection="column"
                 padding="20"
               >
@@ -184,16 +198,26 @@ export default function Home() {
               gap="24"
               marginBottom="80"
               direction="column"
-            >              
-              <Flex position="relative" flex={2} paddingTop="56" paddingX="xl">
-                <a href="https://app.daily.dev/fangplay">
-                <img
-                  src="https://api.daily.dev/devcards/v2/z04Ml86W6sXFPQJyBEh3E.png?type=default&r=txx"
-                  width="356"
-                  alt="Sirirak Sophakarn's Dev Card"
-                />
-              </a>
-              <SmartImage
+            >
+              {" "}
+              <GlitchFx
+                speed="medium"
+                interval={3000}
+                trigger="instant"
+                continuous
+              >
+                <Flex direction="column">
+                  <a href="https://app.daily.dev/fangplay">
+                    <img
+                      src="https://api.daily.dev/devcards/v2/z04Ml86W6sXFPQJyBEh3E.png?type=default&r=txx"
+                      width="356"
+                      alt="Sirirak Sophakarn's Dev Card"
+                    />
+                  </a>
+                </Flex>
+              </GlitchFx>
+              <Flex direction="column">
+                <SmartImage
                   src="/images/channel.png"
                   alt="Image description"
                   aspectRatio="16/9"
@@ -201,6 +225,15 @@ export default function Home() {
                   objectFit="contain"
                 />
               </Flex>
+              {/* <Flex position="relative" flex={2} paddingTop="56" paddingX="xl"> */}
+              {/* <SmartImage
+                  src="/images/channel.png"
+                  alt="Image description"
+                  aspectRatio="16/9"
+                  radius="l"
+                  objectFit="contain"
+                /> */}
+              {/* </Flex> */}
             </Flex>
           </Flex>
 
@@ -322,7 +355,6 @@ export default function Home() {
               </Flex>
             </Link>
           </Grid>
-
         </Flex>
       </Flex>
       <Flex
@@ -336,6 +368,12 @@ export default function Home() {
         <Text variant="body-default-s" onBackground="neutral-weak">
           © {currentYear} Once UI, Developed&Designed By FANGPLAY SIRIRAK
         </Text>
+        <GlitchFx
+                speed="medium"
+                interval={2000}
+                trigger="instant"
+                continuous
+              >
         <Flex gap="12">
           <Button
             href="https://github.com/fangplay"
@@ -354,6 +392,7 @@ export default function Home() {
             LinkedIn
           </Button>
         </Flex>
+        </GlitchFx>
       </Flex>
     </Flex>
   );
