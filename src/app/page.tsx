@@ -87,6 +87,7 @@ export default function Home() {
               gap="20"
               marginBottom="80"
               direction="column"
+              alignItems="center"
               mobileDirection="column"
               padding="20"
             >
