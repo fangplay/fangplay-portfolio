@@ -62,7 +62,7 @@ export default function Certification() {
             >
               <Heading wrap="balance" variant="display-strong-s">
                 <span className="font-code">
-                  <LetterFx trigger="instant">Career Skils</LetterFx>
+                  <LetterFx trigger="instant">Certifications</LetterFx>
                 </span>
               </Heading>
             </Flex>
@@ -79,7 +79,7 @@ export default function Certification() {
           >
             <RevealFx speed="medium" delay={0} translateY={0}>
               <Flex direction="column" padding="24" gap="8">
-                <Text variant="heading-strong-m">Programs Using</Text>
+                {/* <Text variant="heading-strong-m">Programs Using</Text> */}
                 <Text onBackground="neutral-medium" marginBottom="16">
                   NodeJS Certification Course - Google Developer Launchpad
                   (March 2023)
