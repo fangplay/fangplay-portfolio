@@ -245,15 +245,6 @@ export default function Home() {
                   objectFit="contain"
                 />
               </Flex>
-              {/* <Flex position="relative" flex={2} paddingTop="56" paddingX="xl"> */}
-              {/* <SmartImage
-                  src="/images/channel.png"
-                  alt="Image description"
-                  aspectRatio="16/9"
-                  radius="l"
-                  objectFit="contain"
-                /> */}
-              {/* </Flex> */}
             </Flex>
           </Flex>
 
@@ -269,7 +260,7 @@ export default function Home() {
             <Link
               target="_blank"
               style={{ padding: "var(--responsive-space-l)" }}
-              href="#"
+              href="/project"
             >
               <Flex fillWidth paddingY="8" gap="8" direction="column">
                 <Flex fillWidth gap="12" alignItems="center">
@@ -342,7 +333,7 @@ export default function Home() {
             <Link
               target="_blank"
               style={{ padding: "var(--responsive-space-l)" }}
-              href="#"
+              href="/certification"
             >
               <Flex fillWidth paddingY="8" gap="8" direction="column">
                 <Flex fillWidth gap="12" alignItems="center">

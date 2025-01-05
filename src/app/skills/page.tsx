@@ -68,31 +68,6 @@ export default function Skills() {
             </Flex>
           </Flex>
           {/* <RevealFx speed="medium" delay={0} translateY={0}> */}
-            {/* <Flex
-              position="relative"
-              flex={4}
-              gap="20"
-              marginBottom="104"
-              direction="column"
-              mobileDirection="column"
-              padding="20"
-            > */}
-              {/* <Flex
-                                                  position="relative"
-                                                  flex={2}
-                                                  paddingTop="56"
-                                                  paddingX="xl"
-                                                >
-                                                  <SmartImage
-                                                    src="/images/profile-2024.jpg"
-                                                    alt="Image description"
-                                                    aspectRatio="1/1"
-                                                    radius="l"
-                                                    objectFit="contain"
-                                                  />
-                                                </Flex> */}
-            {/* </Flex> */}
-
             <Flex
               position="relative"
               flex={4}
