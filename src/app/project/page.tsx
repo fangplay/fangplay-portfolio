@@ -62,7 +62,7 @@ export default function Projects() {
             >
               <Heading wrap="balance" variant="display-strong-s">
                 <span className="font-code">
-                  <LetterFx trigger="instant">Career Skils</LetterFx>
+                  <LetterFx trigger="instant">Projects</LetterFx>
                 </span>
               </Heading>
             </Flex>
@@ -79,9 +79,9 @@ export default function Projects() {
           >
             <RevealFx speed="medium" delay={0} translateY={0}>
               <Flex direction="column" padding="24" gap="8">
-                <Text variant="heading-strong-m">Programs Using</Text>
+                {/* <Text variant="heading-strong-m">Programs Using</Text> */}
                 <Text onBackground="neutral-medium" marginBottom="16">
-                  Laravel Diary Full Stack)
+                  Laravel Diary Full Stack
                 </Text>
                 <Text onBackground="neutral-medium" marginBottom="16">
                   NodeJS Diary Full Stack(EJS Files)
