@@ -182,6 +182,25 @@ export default function Home() {
                 </Flex>
 
                 <Flex direction="column" padding="24" gap="8">
+                  <Text variant="heading-strong-m">Langauge</Text>
+                  <Text onBackground="neutral-medium" marginBottom="16">
+                    Thai: Fluent
+                  </Text>
+                  <Text onBackground="neutral-medium" marginBottom="16">
+                    English: Advanced
+                  </Text>
+                  <Text onBackground="neutral-medium" marginBottom="16">
+                    Chinese: Intermediate
+                  </Text>
+                  <Text onBackground="neutral-medium" marginBottom="16">
+                    Japanese: Intermediate
+                  </Text>
+                  <Text onBackground="neutral-medium" marginBottom="16">
+                    Korean: Intermediate
+                  </Text>
+                </Flex>
+
+                <Flex direction="column" padding="24" gap="8">
                   <Text variant="heading-strong-m">Score Langauge</Text>
                   <Text onBackground="neutral-medium" marginBottom="16">
                     TOEIC Score : 515(On 21 November 2023)
@@ -226,15 +245,6 @@ export default function Home() {
                   objectFit="contain"
                 />
               </Flex>
-              {/* <Flex position="relative" flex={2} paddingTop="56" paddingX="xl"> */}
-              {/* <SmartImage
-                  src="/images/channel.png"
-                  alt="Image description"
-                  aspectRatio="16/9"
-                  radius="l"
-                  objectFit="contain"
-                /> */}
-              {/* </Flex> */}
             </Flex>
           </Flex>
 
@@ -250,7 +260,7 @@ export default function Home() {
             <Link
               target="_blank"
               style={{ padding: "var(--responsive-space-l)" }}
-              href="#"
+              href="/project"
             >
               <Flex fillWidth paddingY="8" gap="8" direction="column">
                 <Flex fillWidth gap="12" alignItems="center">
@@ -268,7 +278,7 @@ export default function Home() {
             <Link
               target="_blank"
               style={{ padding: "var(--responsive-space-l)" }}
-              href="#"
+              href="/skills"
             >
               <Flex fillWidth paddingY="8" gap="8" direction="column">
                 <Flex fillWidth gap="12" alignItems="center">
@@ -323,7 +333,7 @@ export default function Home() {
             <Link
               target="_blank"
               style={{ padding: "var(--responsive-space-l)" }}
-              href="#"
+              href="/certification"
             >
               <Flex fillWidth paddingY="8" gap="8" direction="column">
                 <Flex fillWidth gap="12" alignItems="center">
@@ -369,30 +379,25 @@ export default function Home() {
         <Text variant="body-default-s" onBackground="neutral-weak">
           © {currentYear} Once UI, Developed&Designed By FANGPLAY SIRIRAK
         </Text>
-        <GlitchFx
-                speed="medium"
-                interval={2000}
-                trigger="instant"
-                continuous
-              >
-        <Flex gap="12">
-          <Button
-            href="https://github.com/fangplay"
-            prefixIcon="github"
-            size="s"
-            variant="tertiary"
-          >
-            GitHub
-          </Button>
-          <Button
-            href="https://www.linkedin.com/in/sirirak-sophakarn/"
-            prefixIcon="linkedin"
-            size="s"
-            variant="tertiary"
-          >
-            LinkedIn
-          </Button>
-        </Flex>
+        <GlitchFx speed="medium" interval={2000} trigger="instant" continuous>
+          <Flex gap="12">
+            <Button
+              href="https://github.com/fangplay"
+              prefixIcon="github"
+              size="s"
+              variant="tertiary"
+            >
+              GitHub
+            </Button>
+            <Button
+              href="https://www.linkedin.com/in/sirirak-sophakarn/"
+              prefixIcon="linkedin"
+              size="s"
+              variant="tertiary"
+            >
+              LinkedIn
+            </Button>
+          </Flex>
         </GlitchFx>
       </Flex>
     </Flex>
