@@ -296,7 +296,7 @@ export default function Home() {
             <Link
               target="_blank"
               style={{ padding: "var(--responsive-space-l)" }}
-              href="#"
+              href="/contact"
             >
               <Flex fillWidth paddingY="8" gap="8" direction="column">
                 <Flex fillWidth gap="12" alignItems="center">
