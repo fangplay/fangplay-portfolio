@@ -87,35 +87,70 @@ export default function Channel() {
                   objectFit="contain"
                 />
               </Flex>
-              <Flex direction="column" padding="24" gap="8">
+
+              <Grid
+                radius="l"
+                border="neutral-medium"
+                borderStyle="solid-1"
+                columns="repeat(3, 1fr)"
+                tabletColumns="1col"
+                mobileColumns="1col"
+                fillWidth
+              >
                 <Link
                   target="_blank"
                   style={{ padding: "var(--responsive-space-l)" }}
                   href="https://www.facebook.com/neoxfangplay"
                 >
-                  <Text onBackground="neutral-medium" marginBottom="16">
-                    Facebook Fanpage
-                  </Text>
+                  <Flex fillWidth paddingY="8" gap="8" direction="column">
+                    <Flex fillWidth gap="12" alignItems="center">
+                      <Text
+                        variant="body-strong-m"
+                        onBackground="neutral-strong"
+                      >
+                        Facebook Fanpage
+                      </Text>
+                      <Icon size="s" name="arrowUpRight" />
+                    </Flex>
+                  </Flex>
                 </Link>
+
                 <Link
                   target="_blank"
                   style={{ padding: "var(--responsive-space-l)" }}
                   href="https://www.youtube.com/channel/UCTfcciUBkQH7ecExH7Qloaw"
                 >
-                  <Text onBackground="neutral-medium" marginBottom="16">
-                    Youtube Live Channel
-                  </Text>
+                  <Flex fillWidth paddingY="8" gap="8" direction="column">
+                    <Flex fillWidth gap="12" alignItems="center">
+                      <Text
+                        variant="body-strong-m"
+                        onBackground="neutral-strong"
+                      >
+                        Youtube Live Channel
+                      </Text>
+                      <Icon size="s" name="arrowUpRight" />
+                    </Flex>
+                  </Flex>
                 </Link>
+
                 <Link
                   target="_blank"
                   style={{ padding: "var(--responsive-space-l)" }}
                   href="https://www.twitch.tv/neoxfangplay"
                 >
-                  <Text onBackground="neutral-medium" marginBottom="16">
-                    Twitch Live Channel
-                  </Text>
+                  <Flex fillWidth paddingY="8" gap="8" direction="column">
+                    <Flex fillWidth gap="12" alignItems="center">
+                      <Text
+                        variant="body-strong-m"
+                        onBackground="neutral-strong"
+                      >
+                        Twitch Live Channel
+                      </Text>
+                      <Icon size="s" name="arrowUpRight" />
+                    </Flex>
+                  </Flex>
                 </Link>
-              </Flex>
+              </Grid>
             </RevealFx>
           </Flex>
           {/* </RevealFx> */}

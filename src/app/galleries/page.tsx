@@ -115,13 +115,6 @@ export default function Galleries() {
                   objectFit="contain"
                 />
                 <SmartImage
-                  src="/images/galleries/355085899_10222144571475594_7667173828853440542_n.jpg"
-                  alt="Image description"
-                  aspectRatio="16/9"
-                  radius="l"
-                  objectFit="contain"
-                />
-                <SmartImage
                   src="/images/galleries/464264126_8780950538634536_1624980947398824651_n.jpg"
                   alt="Image description"
                   aspectRatio="16/9"
@@ -158,13 +151,6 @@ export default function Galleries() {
                 />
                 <SmartImage
                   src="/images/galleries/464748291_3294120960720258_5684465703758278916_n.jpg"
-                  alt="Image description"
-                  aspectRatio="16/9"
-                  radius="l"
-                  objectFit="contain"
-                />
-                <SmartImage
-                  src="/images/galleries/465989187_10225221755043260_6457086200136776866_n.jpg"
                   alt="Image description"
                   aspectRatio="16/9"
                   radius="l"
