@@ -122,7 +122,7 @@ export default function Home() {
                 mobileDirection="column"
                 padding="20"
               >
-                <Flex
+                {/* <Flex
                   position="relative"
                   flex={2}
                   paddingTop="56"
@@ -135,7 +135,23 @@ export default function Home() {
                     radius="l"
                     objectFit="contain"
                   />
-                </Flex>
+                </Flex> */}
+                <GlitchFx
+                  speed="medium"
+                  interval={3000}
+                  trigger="instant"
+                  continuous
+                >
+                  <Flex direction="column">
+                    <a href="https://app.daily.dev/fangplay">
+                      <img
+                        src="https://api.daily.dev/devcards/v2/z04Ml86W6sXFPQJyBEh3E.png?type=default&r=txx"
+                        width="356"
+                        alt="Sirirak Sophakarn's Dev Card"
+                      />
+                    </a>
+                  </Flex>
+                </GlitchFx>
               </Flex>
 
               <Flex
@@ -212,7 +228,7 @@ export default function Home() {
               </Flex>
             </RevealFx>
 
-            <Flex
+            {/* <Flex
               position="relative"
               flex={4}
               gap="24"
@@ -245,7 +261,7 @@ export default function Home() {
                   objectFit="contain"
                 />
               </Flex>
-            </Flex>
+            </Flex> */}
           </Flex>
 
           <Grid
@@ -315,7 +331,7 @@ export default function Home() {
             <Link
               target="_blank"
               style={{ padding: "var(--responsive-space-l)" }}
-              href="#"
+              href="/channel"
             >
               <Flex fillWidth paddingY="8" gap="8" direction="column">
                 <Flex fillWidth gap="12" alignItems="center">
@@ -351,7 +367,7 @@ export default function Home() {
             <Link
               target="_blank"
               style={{ padding: "var(--responsive-space-l)" }}
-              href="#"
+              href="/galleries"
             >
               <Flex fillWidth paddingY="8" gap="8" direction="column">
                 <Flex fillWidth gap="12" alignItems="center">
